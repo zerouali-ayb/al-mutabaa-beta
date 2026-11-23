@@ -48,10 +48,10 @@
   </table>
   <p>لا يستعمل التطبيق أدوات إحصاء أو إعلانات أو تتبع، ولا يبيع أي بيانات أو يشاركها.</p>
 
-  <h2>3. الربط بحساب Google (اختياري)</h2>
-  <p>يعمل التطبيق كاملا دون حساب Google. فإن اختار المستعمل الربط، يطلب التطبيق الأذونات الآتية فقط، كل منها عند الحاجة إليه:</p>
+  <h2>3. حساب Google</h2>
+  <p>يُطلب التسجيل بحساب Google عند إنشاء الحساب، لغرض واحد: التحقق من هوية الأستاذ إن نسي كلمة المرور. أما التقويم وDrive فاختياريان. ولا يطلب التطبيق إلا الأذونات الآتية، كل منها عند الحاجة إليه:</p>
   <ul>
-    <li><b>الاسم والبريد الإلكتروني</b> (openid, email, profile): لملء معلومات الأستاذ في الهاتف عند إنشاء الحساب.</li>
+    <li><b>الاسم والبريد الإلكتروني</b> (openid, email, profile): لملء معلومات الأستاذ في الهاتف، وللتحقق منه عند نسيان كلمة المرور. يُحفظ البريد في الهاتف وحده.</li>
     <li><b>قراءة التقويم</b> (calendar.readonly): لقراءة مواعيد الحصص والفروض وعرضها في «دروس اليوم». لا يكتب التطبيق في التقويم ولا يعدّله.</li>
     <li><b>مجلد التطبيق في Drive</b> (drive.appdata): لحفظ النسخ الاحتياطية واستعادتها. لا يرى التطبيق ملفاتك الأخرى في Drive.</li>
   </ul>
@@ -93,7 +93,7 @@
     <p><b>Al-Mutabaa At-Tarbawiya</b> is a web app that helps teachers in Morocco, in any subject, track and assess their students' progress. It is developed and sold by Ayoub Zerouali (contact: WhatsApp +212 625 993 694).</p>
     <ul>
       <li>All teacher and student data is stored <b>only on the user's device</b> (browser IndexedDB). The app has no backend server and sends no data to the developer or any third party. No analytics, ads or tracking.</li>
-      <li>Google sign-in is <b>optional</b>. Requested scopes, each only when the related feature is used: <code>openid email profile</code> (to prefill the teacher profile on the device), <code>calendar.readonly</code> (to read lesson and exam times; the app never writes to the calendar), <code>drive.appdata</code> (to store and restore the user's own backups in the hidden app folder of their Drive).</li>
+      <li>Google sign-in (<code>openid email profile</code>) is required at sign-up only to verify the teacher's identity if they forget their app password; the email is stored on the device only. Calendar and Drive are optional. Requested scopes, each only when the related feature is used: <code>openid email profile</code> (profile prefill and password recovery), <code>calendar.readonly</code> (to read lesson and exam times; the app never writes to the calendar), <code>drive.appdata</code> (to store and restore the user's own backups in the hidden app folder of their Drive).</li>
       <li>Google user data is exchanged directly between the device and Google over HTTPS, never transferred to the developer, never sold, and not used for advertising or AI model training. The app's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
       <li>Users can revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, delete Drive backups via Drive → Settings → Manage apps, and delete all local data by clearing the site data in their browser.</li>
     </ul>

@@ -1,5 +1,5 @@
 /* Service Worker — المتابعة التربوية. يُولَّد الإصدار وقائمة الملفات أثناء البناء. */
-const VERSION = '9e59a33b8c87';
+const VERSION = '801ae231abf6';
 const PREFIX = 'mutabaa-beta-'; // النسخة الأصلية والتجريبية على الموقع نفسه: لكل منهما ذاكرتها
 const CACHE = `${PREFIX}${VERSION}`;
 const mine = (k) => k.startsWith(PREFIX) && (PREFIX !== 'mutabaa-' || !k.startsWith('mutabaa-beta-'));
