@@ -1,0 +1,8 @@
+Amiri font — Copyright (c) 2010, 2012, Khaled Hosny, with Reserved Font Name Amiri.
+Portions copyright (c) 2010, Sebastian Kosch.
+This Font Software is licensed under the SIL Open Font License, Version 1.1 (https://openfontlicense.org).
+The file amiri.woff is a subset of the original font (Arabic and Latin characters).
+
+Noto Naskh Arabic — Copyright 2014 Google Inc. All Rights Reserved.
+This Font Software is licensed under the SIL Open Font License, Version 1.1 (https://openfontlicense.org).
+The file noto-naskh.woff is a subset of the original font (Arabic and Latin characters).

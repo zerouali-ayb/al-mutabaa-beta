@@ -1,0 +1,32 @@
+{
+ "name": "المتابعة (تجريبي)",
+ "short_name": "تجريبي",
+ "description": "منظومة لمساعدة الأستاذ(ة) على متابعة المتعلمين وتقويمهم",
+ "lang": "ar",
+ "dir": "rtl",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "any",
+ "background_color": "#fbf8f0",
+ "theme_color": "#7a4b12",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512-maskable.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "id": "mutabaa-beta"
+}
