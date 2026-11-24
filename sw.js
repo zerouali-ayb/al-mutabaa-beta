@@ -7,7 +7,8 @@ const FILES = ["./","app.css","app.js","bg.js","fonts/OFL.txt","fonts/amiri.woff
 
 self.addEventListener('install', (event) => {
   // تحديث تلقائي: الإصدار الجديد يتولى فور تخزينه (البيانات في IndexedDB لا تتأثر)
-  event.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
+  // cache: 'reload' يتجاوز ذاكرة المتصفح (GitHub يحفظ الملفات 10 دقائق)، وإلا خُزّن app.js القديم تحت الإصدار الجديد
+  event.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES.map((f) => new Request(f, { cache: 'reload' })))).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (event) => {
