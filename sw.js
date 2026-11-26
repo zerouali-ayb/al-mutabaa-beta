@@ -1,9 +1,9 @@
 /* Service Worker — المتابعة التربوية. يُولَّد الإصدار وقائمة الملفات أثناء البناء. */
-const VERSION = 'f011463de02a';
+const VERSION = '96ca94338aea';
 const PREFIX = 'mutabaa-beta-'; // النسخة الأصلية والتجريبية على الموقع نفسه: لكل منهما ذاكرتها
 const CACHE = `${PREFIX}${VERSION}`;
 const mine = (k) => k.startsWith(PREFIX) && (PREFIX !== 'mutabaa-' || !k.startsWith('mutabaa-beta-'));
-const FILES = ["./","_headers","app.css","app.js","bg.js","fonts/OFL.txt","fonts/amiri.woff","fonts/noto-naskh.woff","google81ec3b9057f6f263.html","icon-192.png","icon-512-maskable.png","icon-512.png","index.html","manifest.webmanifest","pdf.worker.min.js","privacy.html"];
+const FILES = ["./","_headers","app.css","app.js","bg.js","fonts/OFL.txt","fonts/amiri.woff","fonts/noto-naskh.woff","google81ec3b9057f6f263.html","icon-192.png","icon-512-maskable.png","icon-512.png","index.html","manifest.webmanifest","pdf.worker.min.js","privacy.html","robots.txt"];
 
 self.addEventListener('install', (event) => {
   // تحديث تلقائي: الإصدار الجديد يتولى فور تخزينه (البيانات في IndexedDB لا تتأثر)
