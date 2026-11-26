@@ -13,3 +13,5 @@
   Cache-Control: no-cache
 /manifest.webmanifest
   Cache-Control: no-cache
+/revoked.json
+  Cache-Control: no-cache
